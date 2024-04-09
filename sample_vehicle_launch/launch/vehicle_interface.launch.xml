@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <arg name="vehicle_id" default="$(env VEHICLE_ID default)"/>
+  <include file="$(find-pkg-share pix_vehicle_interface)/launch/pix_vehicle_interface_launch.py">
+  </include>
+
 </launch>
